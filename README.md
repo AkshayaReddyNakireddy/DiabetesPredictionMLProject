@@ -398,11 +398,6 @@ The model is evaluated using:
 
 ---
 
-## 📷 Application Preview
-
-Add screenshots of your Streamlit application inside an **images/** folder and reference them here.
-
----
 
 ## 🔮 Future Improvements
 
