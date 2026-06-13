@@ -41,12 +41,10 @@ DiabetesPredictionMLProject/
 │   ├── diabetes_model.pkl
 │   └── scaler.pkl
 │
-├── notebooks/
 │
 ├── train.py
 ├── app.py
 ├── predict.py
-├── EDA.ipynb
 ├── requirements.txt
 ├── README.md
 └── venv/
@@ -200,13 +198,6 @@ Add screenshots of your Streamlit application inside an **images/** folder and r
 
 ---
 
-## 👩‍💻 Author
-
-**Akshaya N**
-
-Final Year Electronics and Communication Engineering Student
-
-Interested in Machine Learning, VLSI, Embedded Systems, and AI Applications.
 
 ---
 
