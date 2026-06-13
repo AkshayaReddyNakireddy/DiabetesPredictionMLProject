@@ -36,6 +36,16 @@ div[data-testid="stMetric"]{
     border-radius:10px;
     border:1px solid #dcdcdc;
 }
+            div[data-baseweb="input"]{
+    border:2px solid #0F62FE;
+    border-radius:10px;
+    padding:4px;
+}
+
+label{
+    font-size:16px !important;
+    font-weight:bold !important;
+}
 
 </style>
 """,unsafe_allow_html=True)
@@ -74,66 +84,78 @@ st.markdown("---")
 # Input
 # -------------------------------------------------
 
-col1,col2=st.columns(2)
+st.markdown("## 📝 Patient Information")
+
+col1, col2 = st.columns(2)
 
 with col1:
 
-    pregnancies=st.slider(
+    pregnancies = st.number_input(
         "Pregnancies",
-        0,
-        20,
-        1
+        min_value=0,
+        max_value=20,
+        value=0,
+        step=1
     )
 
-    glucose=st.slider(
-        "Glucose",
-        0,
-        300,
-        120
+    glucose = st.number_input(
+        "Glucose (mg/dL)",
+        min_value=0,
+        max_value=300,
+        value=100,
+        step=1
     )
 
-    blood_pressure=st.slider(
-        "Blood Pressure",
-        0,
-        200,
-        70
+    blood_pressure = st.number_input(
+        "Blood Pressure (mmHg)",
+        min_value=0,
+        max_value=200,
+        value=70,
+        step=1
     )
 
-    skin_thickness=st.slider(
-        "Skin Thickness",
-        0,
-        100,
-        20
+    skin_thickness = st.number_input(
+        "Skin Thickness (mm)",
+        min_value=0,
+        max_value=100,
+        value=20,
+        step=1
     )
 
 with col2:
 
-    insulin=st.slider(
-        "Insulin",
-        0,
-        900,
-        80
+    insulin = st.number_input(
+        "Insulin (μU/mL)",
+        min_value=0,
+        max_value=900,
+        value=80,
+        step=1
     )
 
-    bmi=st.slider(
+    bmi = st.number_input(
         "BMI",
-        0.0,
-        70.0,
-        25.0
+        min_value=0.0,
+        max_value=70.0,
+        value=25.0,
+        step=0.1,
+        format="%.1f"
     )
 
-    dpf=st.slider(
+    dpf = st.number_input(
         "Diabetes Pedigree Function",
-        0.0,
-        3.0,
-        0.50
+        min_value=0.0,
+        max_value=3.0,
+        value=0.500,
+        step=0.001,
+        format="%.3f"
     )
 
-    age=st.slider(
+    age = st.number_input(
         "Age",
-        1,
-        120,
-        30
+        min_value=1,
+        max_value=120,
+        value=30,
+        step=1
     )
 
 st.markdown("---")
