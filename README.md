@@ -8,6 +8,10 @@ This project predicts whether a person is at risk of diabetes using Machine Lear
 The application is built using **Python, Scikit-learn, and Streamlit** and provides an easy-to-use web interface for making predictions.
 
 ---
+## 🚀 Live Demo
+
+🔗 **Live Application:** https://diabetespredictionmlproject-wztmwci3y4dgkxtv9mppb8.streamlit.app/
+
 
 ## 🚀 Features
 
